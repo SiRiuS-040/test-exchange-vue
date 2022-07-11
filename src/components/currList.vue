@@ -127,6 +127,8 @@ export default {
             let parentItemsArr = parent.querySelectorAll('.currency-switch');
             let itemId = item.getAttribute('currency-id');
 
+            let parentButtonOpenList = parent.querySelector('.switch-action__button--show-all');
+
             let switchCurrencyItem = parent.querySelector('.currency-switch--new-selected');
             let switchCurrencyDesc = switchCurrencyItem.querySelector('.currency-switch__char');
 
@@ -144,6 +146,8 @@ export default {
             }
             // overlay.classList.remove('active');
             parentList.classList.add('hidden');
+
+            parentButtonOpenList.classList.remove('active');
         },
 
     },

@@ -488,9 +488,14 @@ export default {
     switchCurrency(evt) {
       let item = evt.target.closest('.currency-switch')
       let parent = item.closest('.converter__currency');
+
+      let parentButtonOpenList = parent.querySelector('.switch-action__button--show-all');
+
       let parentList = parent.closest('.currencies__switch-list');
       let parentSwitchItems = parent.querySelectorAll('.currency-switch');
       let parentInput = parent.querySelector('.currency__input');
+
+      parentButtonOpenList.classList.remove('active');
       parentSwitchItems.forEach(switchItem => {
         switchItem.classList.remove('active');
       });
