@@ -491,10 +491,12 @@ export default {
 
       let parentButtonOpenList = parent.querySelector('.switch-action__button--show-all');
 
-      let parentList = parent.closest('.currencies__switch-list');
+      let parentList = parent.querySelector('.currencies__list');
       let parentSwitchItems = parent.querySelectorAll('.currency-switch');
       let parentInput = parent.querySelector('.currency__input');
 
+
+      parentList.classList.add('hidden');
       parentButtonOpenList.classList.remove('active');
       parentSwitchItems.forEach(switchItem => {
         switchItem.classList.remove('active');
