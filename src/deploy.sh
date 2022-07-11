@@ -1,0 +1,1 @@
+git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git main

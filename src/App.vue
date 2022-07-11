@@ -5,7 +5,6 @@
         <h1 class="page-header__title">Курсы обмена валют ЦБРФ</h1>
       </div>
     </header>
-
     <main class="page-main converter">
       <section class="converter__calculator cbrf-api">
         <h2 class="converter__region-title">Регион</h2>
